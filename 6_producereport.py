@@ -207,3 +207,24 @@ ProduceDictionary={
     }
 }
 
+for produce, details in ProduceDictionary.items():
+    cost = details['cost']
+    amt_sold = details['amt_sold']
+    total = details['total']
+    calculated_total = round((cost * amt_sold),2)
+
+    if calculated_total != total:
+        print(f"Produce: {produce}")
+        print(f"Stated Total: ${details['total']}")
+        print(f"Calculated Total: ${calculated_total}\n")
+
+
+
+
+
+
+
+
+#We have a dictionary of produce with their per unit cost, the number of units sold and the total. We want to verify that the total is accurate
+#since it was manually entered. Print out the details of any produce that has in inaccurate total. Print both the stated total from the dictionary
+#as well as the calculated total that shows the discrepancy.
