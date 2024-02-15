@@ -15,7 +15,7 @@ movie_ratings={"Interstellar": 9.9,         #Populate movie ratings dict
                "Zombie Land": 6.2}
  
 def recommend_movie(ratings, title):
-    recommended_movies = []
+    recommended_movies = [] ## Currently showing recommended movies even if movie is good??? Fix
 
     if title in movie_ratings:
         if movie_ratings[title] >= 8:
