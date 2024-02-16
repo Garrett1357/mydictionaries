@@ -21,5 +21,5 @@ student['state']='Texas'
 student['age']+=1
 
 #print loop
-for x, y in student.items(): # x = key, y = values
+for x, y in student.items(): # x = key (name, age, major etc.), y = values
     print(f"{x}: {y}")

@@ -21,11 +21,11 @@ def recommend_movie(ratings, title):
         if movie_ratings[title] >= 8:
             print(f"We recommend watching {title}.")
         else:
-            print(f"{title} is not highly rated. You might enjoy these highly rated movies instead:")
+            print(f"{title} is not highly rated. You might enjoy these highly rated movies:")
     else:
-        print(f"{title} is not found in our database. However, you might enjoy these highly rated movies:")
+        print(f"{title} is not found in the database. You might enjoy these highly rated movies:")
     
-    for title, rating in movie_ratings.items():
+    for title, rating in movie_ratings.items(): # Adds movies to recommended_movies list
         if rating >= 8:
             recommended_movies.append(title)
     
